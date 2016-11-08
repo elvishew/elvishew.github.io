@@ -6,17 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.elvishew.com">
-  <title>Elvis Hew 的个人博客</title>
+  <title>使用 Picasso 加载显示联系人头像 | Elvis Hew 的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Elvis Hew 的个人博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Elvis Hew 的个人博客">
-<meta property="og:url" content="http://www.elvishew.com/index.html">
+  <meta name="description" content="Picasso 自带了对加载显示联系人头像的支持，只要传入联系人头像的 URL，例如&amp;quot;photo:content://com.android.contacts/contacts/1005/photo&amp;quot;, 再调用 Picasso.load(Uri).into(ImageView)，即可完成对联系人头像的显示。
+但这种用法有个局限：当我们并不知道某个联系人的头像 URL 时，首先得">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用 Picasso 加载显示联系人头像">
+<meta property="og:url" content="http://www.elvishew.com/2016/11/08/load-contact-photo-using-picasso/index.html">
 <meta property="og:site_name" content="Elvis Hew 的个人博客">
-<meta property="og:description" content="Elvis Hew 的个人博客">
+<meta property="og:description" content="Picasso 自带了对加载显示联系人头像的支持，只要传入联系人头像的 URL，例如&amp;quot;photo:content://com.android.contacts/contacts/1005/photo&amp;quot;, 再调用 Picasso.load(Uri).into(ImageView)，即可完成对联系人头像的显示。
+但这种用法有个局限：当我们并不知道某个联系人的头像 URL 时，首先得">
+<meta property="og:updated_time" content="2016-11-08T14:29:30.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Elvis Hew 的个人博客">
-<meta name="twitter:description" content="Elvis Hew 的个人博客">
+<meta name="twitter:title" content="使用 Picasso 加载显示联系人头像">
+<meta name="twitter:description" content="Picasso 自带了对加载显示联系人头像的支持，只要传入联系人头像的 URL，例如&amp;quot;photo:content://com.android.contacts/contacts/1005/photo&amp;quot;, 再调用 Picasso.load(Uri).into(ImageView)，即可完成对联系人头像的显示。
+但这种用法有个局限：当我们并不知道某个联系人的头像 URL 时，首先得">
   
     <link rel="alternative" href="/atom.xml" title="Elvis Hew 的个人博客" type="application/atom+xml">
   
@@ -136,9 +140,7 @@ var _hmt = _hmt || [];
 </nav>
 
       <div class="body-wrap">
-        
-  
-    <article id="post-load-contact-photo-using-picasso" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-load-contact-photo-using-picasso" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -147,8 +149,8 @@ var _hmt = _hmt || [];
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/08/load-contact-photo-using-picasso/">使用 Picasso 加载显示联系人头像</a>
+    <h1 class="article-title" itemprop="name">
+      使用 Picasso 加载显示联系人头像
     </h1>
   
 
@@ -209,17 +211,54 @@ var _hmt = _hmt || [];
   </div>
 </article>
 
-
-
-
-
-
-
-
-
-
   
-  
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="load-contact-photo-using-picasso" data-title="使用 Picasso 加载显示联系人头像" data-url="http://www.elvishew.com/2016/11/08/load-contact-photo-using-picasso/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"elvishew"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
 
 
       </div>
@@ -241,8 +280,8 @@ var _hmt = _hmt || [];
 		fancybox: true,
 		mathjax: false,
 		animate: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
