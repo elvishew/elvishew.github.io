@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="dns-prefetch" href="http://www.elvishew.com">
+  <title>利用 Image Loader 和自定义 schema 加载特殊来源的图片 | Elvis Hew 的个人博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="首先，我们问一个问题。
+Image Loader 一般拿来加载哪些图片？不管是早期的 Universal-Image-Loader，还是后来的 Picasso，Glide 以及 Fresco，它们都是很优秀的图片加载库，我们可以很轻松地通过它们来加载各种网络图片（http://, https://），甚至是从
+
+应用 Resource（android.resource://）
+应用 Asset（f">
+<meta property="og:type" content="article">
+<meta property="og:title" content="利用 Image Loader 和自定义 schema 加载特殊来源的图片">
+<meta property="og:url" content="http://www.elvishew.com/2016/11/09/load-special-image-using-image-loader/index.html">
+<meta property="og:site_name" content="Elvis Hew 的个人博客">
+<meta property="og:description" content="首先，我们问一个问题。
+Image Loader 一般拿来加载哪些图片？不管是早期的 Universal-Image-Loader，还是后来的 Picasso，Glide 以及 Fresco，它们都是很优秀的图片加载库，我们可以很轻松地通过它们来加载各种网络图片（http://, https://），甚至是从
+
+应用 Resource（android.resource://）
+应用 Asset（f">
+<meta property="og:updated_time" content="2016-11-10T05:59:01.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="利用 Image Loader 和自定义 schema 加载特殊来源的图片">
+<meta name="twitter:description" content="首先，我们问一个问题。
+Image Loader 一般拿来加载哪些图片？不管是早期的 Universal-Image-Loader，还是后来的 Picasso，Glide 以及 Fresco，它们都是很优秀的图片加载库，我们可以很轻松地通过它们来加载各种网络图片（http://, https://），甚至是从
+
+应用 Resource（android.resource://）
+应用 Asset（f">
+  
+    <link rel="alternative" href="/atom.xml" title="Elvis Hew 的个人博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/images/avatar.jpg">
+  
+  <link rel="stylesheet" href="/main.css" type="text/css">
+  
+
+  
+<!-- Baidu Analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?d2345d95e0ad9bed635ccee76dc923b6";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="/images/avatar.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Elvis Hew</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">每一段代码，都是一首诗</p>
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="https://github.com/elvishew" title="github">github</a>
+		        
+					<a class="weibo" target="_blank" href="http://weibo.com/elvishew" title="weibo">weibo</a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">Elvis Hew</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="/images/avatar.jpg" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Elvis Hew</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">每一段代码，都是一首诗</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/elvishew" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/elvishew" title="weibo">weibo</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-load-special-image-using-image-loader" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      利用 Image Loader 和自定义 schema 加载特殊来源的图片
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>首先，我们问一个问题。</p>
+<h3 id="Image_Loader__u4E00_u822C_u62FF_u6765_u52A0_u8F7D_u54EA_u4E9B_u56FE_u7247_uFF1F"><a href="#Image_Loader__u4E00_u822C_u62FF_u6765_u52A0_u8F7D_u54EA_u4E9B_u56FE_u7247_uFF1F" class="headerlink" title="Image Loader 一般拿来加载哪些图片？"></a>Image Loader 一般拿来加载哪些图片？</h3><p>不管是早期的 <a href="/&quot;https://github.com/nostra13/Android-Universal-Image-Loader&quot;">Universal-Image-Loader</a>，还是后来的 <a href="/&quot;https://github.com/square/picasso&quot;">Picasso</a>，<a href="/&quot;https://github.com/bumptech/glide&quot;">Glide</a> 以及 <a href="/&quot;https://github.com/facebook/fresco&quot;">Fresco</a>，它们都是很优秀的图片加载库，我们可以很轻松地通过它们来加载各种网络图片（<code>http://</code>, <code>https://</code>），甚至是从</p>
+<ul>
+<li>应用 Resource（<code>android.resource://</code>）</li>
+<li>应用 Asset（<code>file://android_asset/</code>）</li>
+<li>本地文件（<code>file:///</code>）</li>
+<li>本地多媒体库（<code>content://</code>）</li>
+</ul>
+<p>加载图片。</p>
+<p>但是，Image Loader 的作用绝不止于此。</p>
+<h3 id="Image_Loader__u8FD8_u53EF_u4EE5_u7528_u6765_u52A0_u8F7D_u54EA_u4E9B_u56FE_u7247_uFF1F"><a href="#Image_Loader__u8FD8_u53EF_u4EE5_u7528_u6765_u52A0_u8F7D_u54EA_u4E9B_u56FE_u7247_uFF1F" class="headerlink" title="Image Loader 还可以用来加载哪些图片？"></a>Image Loader 还可以用来加载哪些图片？</h3><ul>
+<li>系统已安装动态壁纸的缩略图</li>
+<li>系统已安装应用的图标</li>
+<li>系统已安装应用里的图片资源</li>
+<li>未安装 apk 文件的图标</li>
+<li>未安装 apk 文件里的图片资源</li>
+<li>图片缩略图</li>
+<li>视频缩略图</li>
+<li>通讯录联系人头像</li>
+</ul>
+<p>可以这么说，只要输出是图片的地方，都可以用 Image Loader 进行加载。</p>
+<h3 id="u5982_u4F55_u5229_u7528_Image_Loader__u52A0_u8F7D_u8FD9_u4E9B_u7279_u6B8A_u56FE_u7247_uFF1F"><a href="#u5982_u4F55_u5229_u7528_Image_Loader__u52A0_u8F7D_u8FD9_u4E9B_u7279_u6B8A_u56FE_u7247_uFF1F" class="headerlink" title="如何利用 Image Loader 加载这些特殊图片？"></a>如何利用 Image Loader 加载这些特殊图片？</h3><p>一种通用思路是，既然 Image Loader 根据 URL 来加载各种网络图片或本地图片，而它们的 schema 一般都不一样，如网络图片的 schema 是 <code>http</code> 和 <code>https</code>，本地文件的 schema 是 <code>file</code>，那我们可以通过构造自定义 schema 的 URL，来指代不同类型（来源）的图片，只要配置 Image Loader 使其能从这些自定义 schema 的 URL 中识别并加载图片，后续就可以像加载普通图片一样方便地加载这些特殊图片了。</p>
+<p>具体步骤如下。</p>
+<p><em>1. 设计图片 URL 的格式</em></p>
+<p>举个例子，比如我们在开发一个应用管理软件，需要在列表中显示系统已安装应用的图标，我们可以用 <code>&quot;application://com.elvishew.sampleapp/10&quot;</code> 表示包名为 <code>com.elvishew.sampleapp</code>、版本号为 <code>10</code> 的应用的缩略图。</p>
+<p>又比如我们在开发一个文件管理器，需要显示 apk 文件的应用图标，我们可以用 <code>&quot;apk:///sdcard/sample.apk#1470000000000&quot;</code> 表示存放在 <code>/sdcard</code> 路径下、名为 <code>sample.apk</code>、最后修改时间戳为 <code>1470000000000</code> 的 apk 文件的应用图标。</p>
+<p>以上有个小细节，我们把那些可能会影响加载结果的因素，如应用程序的版本号、apk 文件的最后修改时间戳，加入到 URL 中。这样一来，一旦这些影响因素变了，URL 也会跟着改变，Image Loader 就会视它们为不同的图片，而不去使用错误的缓存。</p>
+<p><em>2. 配置 Image Loader，让其可以从自定义格式的 URL 中加载图片</em></p>
+<p>首先，定义特殊图片的 schema。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 系统已安装应用的图标 schema</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String URL_SCHEMA_APPLICATION = <span class="string">"application"</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// apk 文件的应用图标 schema</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String URL_SCHEMA_APK = <span class="string">"apk"</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 省略其他 schema</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>其次，自定义 Downloader（<a href="/&quot;https://github.com/nostra13/Android-Universal-Image-Loader&quot;">Universal-Image-Loader</a>） 或 RequestHandler（<a href="/&quot;https://github.com/square/picasso&quot;">Picasso</a>），在应用初始化时配置 Image Loader。</p>
+<p><a href="/&quot;https://github.com/nostra13/Android-Universal-Image-Loader&quot;">Universal-Image-Loader</a>：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 自定义 Downloader</span></span><br><span class="line"><span class="keyword">private</span> <span class="class"><span class="keyword">class</span> <span class="title">CustomImageDownloader</span> <span class="keyword">extends</span> <span class="title">BaseImageDownloader</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 省略部分代码</span></span><br><span class="line">  ...</span><br><span class="line"></span><br><span class="line">  <span class="annotation">@Override</span></span><br><span class="line">  <span class="function"><span class="keyword">protected</span> InputStream <span class="title">getStreamFromOtherSource</span><span class="params">(String imageUri, Object extra)</span></span><br><span class="line">      <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    InputStream is = <span class="keyword">null</span>;</span><br><span class="line">    Uri uri = Uri.parse(imageUri);</span><br><span class="line">    <span class="keyword">if</span> (URL_SCHEMA_APPLICATION.equals(uri.getScheme())) &#123;</span><br><span class="line">      String packageName = uri.getHost();</span><br><span class="line">      is = getApplicationIconInputStream(packageName);</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (URL_SCHEMA_APK.equals(uri.getScheme())) &#123;</span><br><span class="line">      String apkPath = uri.getAuthority();</span><br><span class="line">      is = getApkIconInputStream(apkPath);</span><br><span class="line">    &#125;</span><br><span class="line">    ... <span class="comment">// 省略其他分支代码</span></span><br><span class="line">    <span class="keyword">return</span> is;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 配置 Universal-Image-Loader</span></span><br><span class="line">ImageLoaderConfiguration.Builder configBuilder = <span class="keyword">new</span> ImageLoaderConfiguration.Builder(context)</span><br><span class="line">      .imageDownloader(<span class="keyword">new</span> CustomImageDownloader())</span><br><span class="line">      ... <span class="comment">// 省略其他配置代码</span></span><br><span class="line"></span><br><span class="line">ImageLoader.getInstance().init(configBuilder.build());</span><br></pre></td></tr></table></figure>
+<p><a href="/&quot;https://github.com/square/picasso&quot;">Picasso</a>：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 自定义 RequestHandler</span></span><br><span class="line"><span class="keyword">private</span> <span class="class"><span class="keyword">class</span> <span class="title">CustomRequestHandler</span> <span class="keyword">extends</span> <span class="title">RequestHandler</span> </span>&#123;</span><br><span class="line">  <span class="annotation">@Override</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">canHandleRequest</span><span class="params">(Request data)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> URL_SCHEMA_APPLICATION.equals(data.uri.getScheme())</span><br><span class="line">        || URL_SCHEMA_APK.equals(data.uri.getScheme())</span><br><span class="line">        || ... <span class="comment">/* 省略其他 schema 的检查 */</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="annotation">@Override</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> Result <span class="title">load</span><span class="params">(Request request, <span class="keyword">int</span> networkPolicy)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    Uri uri = request.uri;</span><br><span class="line">    InputStream is = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">if</span> (URL_SCHEMA_APPLICATION.equals(uri.getScheme())) &#123;</span><br><span class="line">      String packageName = uri.getHost();</span><br><span class="line">      <span class="keyword">int</span> versionCode = uri.getPort();</span><br><span class="line">      is = getApplicationIconInputStream(packageName, versionCode);</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (URL_SCHEMA_APK.equals(uri.getScheme())) &#123;</span><br><span class="line">      String apkPath = uri.getAuthority();</span><br><span class="line">      is = getApkIconInputStream(apkPath);</span><br><span class="line">    &#125;</span><br><span class="line">    ... <span class="comment">// 省略其他分支代码</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> Result(is, Picasso.LoadedFrom.DISK);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 配置 Picasso</span></span><br><span class="line">mPicasso = <span class="keyword">new</span> Picasso.Builder(context)</span><br><span class="line">    .addRequestHandler(<span class="keyword">new</span> CustomRequestHandler())</span><br><span class="line">    .build();</span><br></pre></td></tr></table></figure>
+<p><em>3. 组装图片 URL</em></p>
+<p>以加载 <code>/sdcard/sample.apk</code> 这个 apk 文件的应用图标为例，假设它的最后修改时间戳为 <code>1470000000000</code>，我们可以组装得到 URL <code>&quot;apk:///sdcard/sample.apk#1470000000000&quot;</code>。</p>
+<p><em>4. 使用组装的 URL 加载图片</em></p>
+<p><a href="/&quot;https://github.com/nostra13/Android-Universal-Image-Loader&quot;">Universal-Image-Loader</a>：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ImageLoader.getInstance().displayImage(uri, imageView);</span><br></pre></td></tr></table></figure>
+<p><a href="/&quot;https://github.com/square/picasso&quot;">Picasso</a>：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mPicasso.load(uri).into(imageView);</span><br></pre></td></tr></table></figure>
+<p>大功告成。</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/09/load-special-image-using-image-loader/" class="archive-article-date">
+  	<time datetime="2016-11-09T13:33:01.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-09</time>
+</a>
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/图片加载/">图片加载</a></li></ul>
+	</div>
+
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2016/11/08/load-contact-photo-using-picasso/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">使用 Picasso 加载显示联系人头像</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="load-special-image-using-image-loader" data-title="利用 Image Loader 和自定义 schema 加载特殊来源的图片" data-url="http://www.elvishew.com/2016/11/09/load-special-image-using-image-loader/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"elvishew"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 Elvis Hew
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/",
+		innerArchive: true
+	}
+</script>
+
+<script src="/./main.js" type="text/javascript"></script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				<a href="/tags/Android/" style="font-size: 20px;">Android</a> <a href="/tags/Picasso/" style="font-size: 10px;">Picasso</a> <a href="/tags/图片加载/" style="font-size: 10px;">图片加载</a>
+    			</div>
+    	</section>
+    
+
+    
+
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>
