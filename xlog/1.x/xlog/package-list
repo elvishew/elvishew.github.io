@@ -1,0 +1,16 @@
+com.elvishew.xlog
+com.elvishew.xlog.flattener
+com.elvishew.xlog.formatter
+com.elvishew.xlog.formatter.border
+com.elvishew.xlog.formatter.message.json
+com.elvishew.xlog.formatter.message.object
+com.elvishew.xlog.formatter.message.throwable
+com.elvishew.xlog.formatter.message.xml
+com.elvishew.xlog.formatter.stacktrace
+com.elvishew.xlog.formatter.thread
+com.elvishew.xlog.interceptor
+com.elvishew.xlog.printer
+com.elvishew.xlog.printer.file
+com.elvishew.xlog.printer.file.backup
+com.elvishew.xlog.printer.file.naming
+com.elvishew.xlog.printer.flattener

@@ -2,13 +2,658 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/index-files/index-16.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/allclasses-noframe.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/stylesheet.css</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/serialized-form.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/script.js</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/overview-tree.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/overview-summary.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/index.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/index-files/index-9.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/index-files/index-8.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/index-files/index-7.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/index-files/index-6.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/index-files/index-5.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/index-files/index-4.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/index-files/index-3.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/index-files/index-20.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/index-files/index-2.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/index-files/index-19.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/index-files/index-18.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/index-files/index-17.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/allclasses-frame.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/index-files/index-15.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/index-files/index-14.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/index-files/index-13.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/index-files/index-12.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/index-files/index-11.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/index-files/index-10.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/index-files/index-1.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/help-doc.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/deprecated-list.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/constant-values.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/flattener/package-tree.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/flattener/package-summary.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/flattener/package-frame.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/file/naming/package-tree.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/file/naming/package-summary.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/file/naming/package-frame.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/file/backup/package-tree.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/file/backup/package-summary.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/file/backup/package-frame.html</loc>
+    <lastmod>2016-12-12T07:11:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/LogConfiguration.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/file/package-tree.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/file/package-summary.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/file/package-frame.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/package-summary.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/package-frame.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/package-tree.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/LogItem.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/LogLevel.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/LogUtils.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/Logger.Builder.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/overview-frame.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/package-tree.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/LogConfiguration.Builder.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/file/backup/NeverBackupStrategy.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/file/backup/FileSizeBackupStrategy.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/file/backup/BackupStrategy.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/file/FilePrinter.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/file/FilePrinter.Builder.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/Logger.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/XLog.Log.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/XLog.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/flattener/ClassicFlattener.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/flattener/DefaultFlattener.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/flattener/Flattener.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/flattener/PatternFlattener.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/package-summary.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/package-frame.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/interceptor/package-tree.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/interceptor/package-summary.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/interceptor/package-frame.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/interceptor/WhitelistTagsFilterInterceptor.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/interceptor/Interceptor.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/interceptor/BlacklistTagsFilterInterceptor.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/interceptor/AbstractFilterInterceptor.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/thread/package-tree.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/thread/package-summary.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/thread/package-frame.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/flattener/package-frame.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/flattener/package-summary.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/stacktrace/package-tree.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/stacktrace/package-summary.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/stacktrace/package-frame.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/stacktrace/StackTraceFormatter.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/stacktrace/DefaultStackTraceFormatter.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/package-tree.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/package-summary.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/package-frame.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/message/xml/package-tree.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/message/xml/package-summary.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/message/xml/package-frame.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/flattener/package-tree.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/border/BorderFormatter.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/message/throwable/package-tree.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/message/throwable/package-summary.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/message/throwable/package-frame.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/message/throwable/ThrowableFormatter.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/message/throwable/DefaultThrowableFormatter.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/message/object/package-tree.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/message/object/package-summary.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/message/object/package-frame.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/message/object/ObjectFormatter.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/message/json/package-tree.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/message/json/package-summary.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/message/json/package-frame.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/message/json/JsonFormatter.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/message/json/DefaultJsonFormatter.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/border/package-tree.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/border/package-summary.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/border/package-frame.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/border/DefaultBorderFormatter.html</loc>
+    <lastmod>2016-12-12T07:11:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/PrinterSet.html</loc>
+    <lastmod>2016-12-12T07:11:20.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/message/xml/DefaultXmlFormatter.html</loc>
+    <lastmod>2016-12-12T07:11:20.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/FormatException.html</loc>
+    <lastmod>2016-12-12T07:11:20.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/message/xml/XmlFormatter.html</loc>
+    <lastmod>2016-12-12T07:11:20.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/thread/DefaultThreadFormatter.html</loc>
+    <lastmod>2016-12-12T07:11:20.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/thread/ThreadFormatter.html</loc>
+    <lastmod>2016-12-12T07:11:20.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/flattener/LogFlattener.html</loc>
+    <lastmod>2016-12-12T07:11:20.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/AndroidPrinter.html</loc>
+    <lastmod>2016-12-12T07:11:20.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/ConsolePrinter.html</loc>
+    <lastmod>2016-12-12T07:11:20.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/Printer.html</loc>
+    <lastmod>2016-12-12T07:11:20.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/formatter/Formatter.html</loc>
+    <lastmod>2016-12-12T07:11:20.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/RemotePrinter.html</loc>
+    <lastmod>2016-12-12T07:11:20.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/SystemPrinter.html</loc>
+    <lastmod>2016-12-12T07:11:20.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/file/naming/ChangelessFileNameGenerator.html</loc>
+    <lastmod>2016-12-12T07:11:20.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/file/naming/DateFileNameGenerator.html</loc>
+    <lastmod>2016-12-12T07:11:20.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/file/naming/FileNameGenerator.html</loc>
+    <lastmod>2016-12-12T07:11:20.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/file/naming/LevelFileNameGenerator.html</loc>
+    <lastmod>2016-12-12T07:11:20.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.elvishew.com/xlog/1.x/xlog/com/elvishew/xlog/printer/flattener/DefaultLogFlattener.html</loc>
+    <lastmod>2016-12-12T07:11:20.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.elvishew.com/2016/11/09/load-special-image-using-image-loader/</loc>
-    <lastmod>2016-11-10T16:25:09.000Z</lastmod>
+    <lastmod>2016-11-10T16:25:02.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://blog.elvishew.com/2016/11/08/load-contact-photo-using-picasso/</loc>
-    <lastmod>2016-11-10T16:19:39.000Z</lastmod>
+    <lastmod>2016-11-10T16:19:38.000Z</lastmod>
   </url>
   
 </urlset>
